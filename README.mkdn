@@ -19,7 +19,7 @@ or if you use SSH:
 
 Then to sync up:
 
-    repo sync
+    repo sync --force-sync --current-branch --no-tags --no-clone-bundle --optimized-fetch --force-broken
 
 Set up build enviroment
 
