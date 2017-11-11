@@ -102,6 +102,14 @@
   <project path="system/sepolicy" name="AOSP-JF-MM/platform_system_sepolicy" groups="pdk" remote="github" revision="aosp-7.1.2" />
   <project path="system/vold" name="AOSP-JF-MM/platform_system_vold" groups="pdk" remote="github" revision="aosp-7.1.2" />
 
+  <!-- OmniRom additions -->
+  <project name="android_packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="rr" />
+  <project name="packages_services_OmniJaws" path="packages/services/OmniJaws" remote="rr" />
+  
+  <!-- interfacer -->
+  <project name="packages_services_ThemeInterfacer" path="packages/services/ThemeInterfacer" remote="rr" />
+  
+  
   <!-- LineageOS -->
   <project path="external/ahbottomnavigation" name="LineageOS/android_external_ahbottomnavigation" remote="github" revision="cm-14.1" />
   <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" remote="github" revision="cm-14.1" />
