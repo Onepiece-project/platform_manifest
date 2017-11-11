@@ -18,7 +18,7 @@
   <include name="snippets/aosp.xml" />
 
   <!-- Custom packages -->
-  <include name="snippets/custom_packages.xml" />
+  <include name="snippets/one.xml" />
 
   <!-- Darwin packages (uncomment the line below if building on OS X) -->
   <!-- <include name="snippets/darwin.xml" /> -->
