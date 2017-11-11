@@ -14,7 +14,7 @@ To initialize your local repository using the AOSP trees, use a command like thi
 
 or if you use SSH:
 
-    repo init -u git@github.com:AOSP-JF-MM/platform_manifest.git -b aosp-7.1.2
+    repo init -u git@github.com:Onepiece-project/platform_manifest.git -b aosp-7.1.2
 
 
 Then to sync up:
