@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- AOSP-JDC -->
-  <project path="build" name="AOSP-JF-MM/platform_build" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" >
+  <!-- AOSP-ONE -->
+  <project path="build" name="Onepiece-project/platform_build" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="build/blueprint" name="AOSP-JF-MM/platform_build_blueprint" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" />
-  <project path="build/kati" name="AOSP-JF-MM/platform_build_kati" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" />
-  <project path="build/soong" name="AOSP-JF-MM/platform_build_soong" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" >
+  <project path="build/blueprint" name="Onepiece-project/platform_build_blueprint" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" />
+  <project path="build/kati" name="Onepiece-project/platform_build_kati" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" />
+  <project path="build/soong" name="Onepiece-project/platform_build_soong" groups="pdk,tradefed" remote="github" revision="aosp-7.1.2" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="AOSP-JF-MM/platform_art" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="bionic" name="AOSP-JF-MM/platform_bionic" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="bootable/recovery" name="AOSP-JF-MM/platform_bootable_recovery" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="device/qcom/sepolicy" name="AOSP-JF-MM/platform_device_qcom_sepolicy" remote="github" revision="aosp-7.1.2" />
-  <project path="device/qcom/common" name="AOSP-JF-MM/android_device_qcom_common" remote="github" revision="aosp-7.1.2" />
+  <project path="art" name="Onepiece-project/platform_art" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="bionic" name="Onepiece-project/platform_bionic" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="bootable/recovery" name="Onepiece-project/platform_bootable_recovery" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="device/qcom/sepolicy" name="Onepiece-project/platform_device_qcom_sepolicy" remote="github" revision="aosp-7.1.2" />
+  <project path="device/qcom/common" name="Onepiece-project/android_device_qcom_common" remote="github" revision="aosp-7.1.2" />
   <project path="external/android-clat" name="AOSP-JF-MM/platform_external_android-clat" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="external/apache-http" name="AOSP-JF-MM/platform_external_apache-http" groups="pdk" remote="github" revision="aosp-7.1.2" />
   <project path="external/boringssl" name="AOSP-JF-MM/platform_external_boringssl" groups="pdk" remote="github" revision="aosp-7.1.2" />
@@ -68,44 +68,42 @@
   <project path="packages/apps/Contacts" name="AOSP-JF-MM/platform_packages_apps_Contacts" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/ContactsCommon" name="AOSP-JF-MM/platform_packages_apps_ContactsCommon" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/DeskClock" name="AOSP-JF-MM/platform_packages_apps_DeskClock" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Dialer" name="AOSP-JF-MM/platform_packages_apps_Dialer" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Exchange" name="AOSP-JF-MM/platform_packages_apps_Exchange" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/HTMLViewer" name="AOSP-JF-MM/platform_packages_apps_HTMLViewer" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Jelly" name="AOSP-JF-MM/platform_packages_apps_Jelly" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/KeyChain" name="AOSP-JF-MM/platform_packages_apps_KeyChain" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/Exchange" name="Onepiece-project/platform_packages_apps_Exchange" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/HTMLViewer" name="Onepiece-project/platform_packages_apps_HTMLViewer" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/Jelly" name="Onepiece-project/platform_packages_apps_Jelly" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/KeyChain" name="Onepiece-project/platform_packages_apps_KeyChain" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/interfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
-  <project path="packages/apps/Messaging" name="AOSP-JF-MM/platform_packages_apps_Messaging" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Nfc" name="AOSP-JF-MM/platform_packages_apps_Nfc" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/OTAUpdates" name="AOSP-JF-MM/platform_packages_apps_OTAUpdates" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/PackageInstaller" name="AOSP-JF-MM/platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/PhoneCommon" name="AOSP-JF-MM/platform_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Settings" name="AOSP-JF-MM/platform_packages_apps_Settings" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/SnapdragonCamera" name="AOSP-JF-MM/packages_apps_SnapdragonCamera" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Stk" name="AOSP-JF-MM/platform_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/STweaks" name="AOSP-JF-MM/STweaks" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/inputmethods/LatinIME" name="AOSP-JF-MM/platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/providers/ContactsProvider" name="AOSP-JF-MM/platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/providers/DownloadProvider" name="AOSP-JF-MM/platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/providers/MediaProvider" name="AOSP-JF-MM/platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/providers/TelephonyProvider" name="AOSP-JF-MM/platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/services/Telecomm" name="AOSP-JF-MM/platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/services/Telephony" name="AOSP-JF-MM/platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="system/bt" name="AOSP-JF-MM/platform_system_bt" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/core" name="AOSP-JF-MM/platform_system_core" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/extras" name="AOSP-JF-MM/platform_system_extras" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/keymaster" name="AOSP-JF-MM/platform_system_keymaster" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/media" name="AOSP-JF-MM/platform_system_media" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/netd" name="AOSP-JF-MM/platform_system_netd" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/security" name="AOSP-JF-MM/platform_system_security" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/sepolicy" name="AOSP-JF-MM/platform_system_sepolicy" groups="pdk" remote="github" revision="aosp-7.1.2" />
-  <project path="system/vold" name="AOSP-JF-MM/platform_system_vold" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/Nfc" name="Onepiece-project/platform_packages_apps_Nfc" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/OTAUpdates" name="Onepiece-project/platform_packages_apps_OTAUpdates" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/PackageInstaller" name="Onepiece-project/platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/PhoneCommon" name="Onepiece-project/platform_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/Settings" name="Onepiece-project/platform_packages_apps_Settings" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/SnapdragonCamera" name="Onepiece-project/packages_apps_SnapdragonCamera" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/Stk" name="Onepiece-project/platform_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/apps/STweaks" name="Onepiece-project/STweaks" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/inputmethods/LatinIME" name="Onepiece-project/platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/providers/ContactsProvider" name="Onepiece-project/platform_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/providers/DownloadProvider" name="Onepiece-project/platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/providers/MediaProvider" name="Onepiece-project/platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/providers/TelephonyProvider" name="Onepiece-project/platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/services/Telecomm" name="Onepiece-project/platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="packages/services/Telephony" name="Onepiece-project/platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
+  <project path="system/bt" name="Onepiece-project/platform_system_bt" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/core" name="Onepiece-project/platform_system_core" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/extras" name="Onepiece-project/platform_system_extras" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/keymaster" name="Onepiece-project/platform_system_keymaster" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/media" name="Onepiece-project/platform_system_media" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/netd" name="Onepiece-project/platform_system_netd" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/security" name="Onepiece-project/platform_system_security" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/sepolicy" name="Onepiece-project/platform_system_sepolicy" groups="pdk" remote="github" revision="aosp-7.1.2" />
+  <project path="system/vold" name="Onepiece-project/platform_system_vold" groups="pdk" remote="github" revision="aosp-7.1.2" />
 
   <!-- OmniRom additions -->
-  <project name="android_packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="github" />
-  <project name="packages_services_OmniJaws" path="packages/services/OmniJaws" remote="github" />
+  <project name="Onepiece-project/android_packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="github" revision="nougat" />
+  <project name="Onepiece-project/packages_services_OmniJaws" path="packages/services/OmniJaws" remote="github" revision="nougat" />
   
   <!-- interfacer -->
-  <project name="packages_services_ThemeInterfacer" path="packages/services/ThemeInterfacer" remote="rr" />
+  <project name="Onepiece-project/packages_services_ThemeInterfacer" path="packages/services/ThemeInterfacer" remote="github"  revision="nougat" />
   
   
   <!-- LineageOS -->
