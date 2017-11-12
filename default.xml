@@ -13,7 +13,13 @@
   <default revision="refs/tags/android-7.1.2_r29"
            remote="aosp"
            sync-j="4" />
-
+  
+  
+  <remote  name="one"
+	   fetch="https://github.com/Onepiece-project"
+	   revision="aosp-7.1.2" />
+  
+  
   <!-- AOSP packages -->
   <include name="snippets/aosp.xml" />
 
