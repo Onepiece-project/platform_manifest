@@ -61,9 +61,7 @@
   <project path="frameworks/rs" name="AOSP-JF-MM/platform_frameworks_rs" groups="pdk" remote="github" revision="aosp-7.1.2" />
   <project path="frameworks/support" name="AOSP-JF-MM/platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="libcore" name="AOSP-JF-MM/platform_libcore" groups="pdk"  remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/MusicFX" name="AOSP-JF-MM/platform_packages_apps_MusicFX" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/Bluetooth" name="AOSP-JF-MM/platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="github" revision="aosp-7.1.2" />
-  <project path="packages/apps/Browser" name="AOSP-JF-MM/platform_packages_apps_Browser" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/Camera2" name="AOSP-JF-MM/platform_packages_apps_Camera2" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/CarrierConfig" name="AOSP-JF-MM/platform_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
   <project path="packages/apps/CellBroadcastReceiver" name="AOSP-JF-MM/platform_packages_apps_CellBroadcastReceiver" groups="pdk-fs" remote="github" revision="aosp-7.1.2" />
@@ -103,8 +101,8 @@
   <project path="system/vold" name="AOSP-JF-MM/platform_system_vold" groups="pdk" remote="github" revision="aosp-7.1.2" />
 
   <!-- OmniRom additions -->
-  <project name="android_packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="rr" />
-  <project name="packages_services_OmniJaws" path="packages/services/OmniJaws" remote="rr" />
+  <project name="android_packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="github" />
+  <project name="packages_services_OmniJaws" path="packages/services/OmniJaws" remote="github" />
   
   <!-- interfacer -->
   <project name="packages_services_ThemeInterfacer" path="packages/services/ThemeInterfacer" remote="rr" />
